@@ -24,18 +24,29 @@
             function checkForPalindrome(n){//formal argument/parameter
                 //function body
                 //string.length
-                alert(n.length);
-                alert(n.charAt(0));
+                //alert(n.length);
+                //alert(n.charAt(0));
+            var isPalindrome = false;   
 
+                
+            for(j=(n.length-1);j>=0;j--){
+                console.log(n.charAt(j));
                 for(var i=0;i<n.length;i++){
                     console.log(n.charAt(i));
+                    if(n.charAt(j) == n.charAt(i)){
+                        isPalindrome = true;
+                        }else{
+                            isPalindrome = false;
+                    }
                 }
-                for(j=(n.length-1);j>=0;j--){
-                    console.log(n.charAt(j));
-                }
-
             }
-
+                if(isPalindrome == true){
+                    alert(n+" is a palindrome number");
+                }else{
+                    alert(n+ " is not a palindrome number");
+                }
+            }
+        
             let number = prompt('Enter the number check it if polindrome and not?');
                
             //number=parseInt(number);
