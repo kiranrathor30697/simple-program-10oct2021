@@ -4,9 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Palindrom Number</title>
+        <style>
+
+        </style>
+
+        <script>
+
+        </script>
     </head>
     <body>
-        
+
+
+        <script>
+            //1. function definition
+            function checkForPalindrome(n){//formal argument/parameter
+                //function body
+                //string.length
+                alert(n.length);
+                alert(n.charAt(0));
+
+                for(var i=0;i<n.length;i++){
+                    console.log(n.charAt(i));
+                }
+                for(j=(n.length-1);j>=0;j--){
+                    console.log(n.charAt(j));
+                }
+
+            }
+
+            let number = prompt('Enter the number check it if polindrome and not?');
+               
+            //number=parseInt(number);
+            //alert(number+10);
+
+
+            //1.funcion calling
+            checkForPalindrome(number);//actual argument/parameter
+
+        </script>
     </body>
 </html>
