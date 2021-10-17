@@ -14,28 +14,27 @@
         </script>
     </head>
     <body>
-        <form onsubmit="submitForm()">
-            <input type="text" data-n1='n1' name="number1" id="n1" placeholder="Enter the number Base">
-            <input type="text" name="number2" id="n2" placeholder="Enter the number height">
+        <form onSubmit="submitForm()">
+            <div>
+                <label for="base">Triangle Base :</label>
+                <input type="text" id="base" name="base" required>
+            </div>
+            <div>
+                <label for="height">Triangle Height :</label>
+                <input type="text" id="height" name="height" required>
+            </div>
             <input type="submit" value="Submit">
         </form>
-        
-        <script>
-            //1.function definition
 
-            function submitForm(){//formal argument/parameter
-                //function body
-                let num1 = document.querySelector("[data-n1='n1']").value;
-                var num2 = document.getElementById('n2').value;
-                alert(parseInt(num1) + parseInt(num2));
+       <script>
+           //1. function definition
+           function submitForm(){
+               //function body
+               let base = document.getElementById('base').value;
+               let height = document.querySelector('#height').value;
+               alert((parseInt(base) * parseInt(height))/2);
+           }
 
-                let res = parseInt(num1) + parseInt(num2);
-                alert(res);
-
-                //now this result store local storage 
-                localStorage.setItem('result',res);
-            }
-            
-        </script>
+       </script>
     </body>
 </html>
