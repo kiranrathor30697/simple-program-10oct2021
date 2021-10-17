@@ -17,12 +17,15 @@
         
         <script>
             //1. function definition
-            function GenerateReverseNumber(){//formal argument/parameter
-                alert('ok');
+            function GenerateReverseNumber(n){//formal argument/parameter
+                //alert('ok');
+                for(var i=n.length;i>=0;i--){
+                    console.log(n.charAt(i));
+                }
             }
             let number = prompt('Enter the Number');
             //1.function calling
-            GenerateReverseNumber();//actual argument/parameter
+            GenerateReverseNumber(number);//actual argument/parameter
         </script>
     </body>
 </html>
