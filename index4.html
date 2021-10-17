@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Access Form Element</title>
+        <title>Area of Squre</title>
         <style>
 
         </style>
@@ -16,12 +16,8 @@
     <body>
         <form onsubmit="submitForm()">
             <div>
-                <label for="n1">Enter the first number</label>
-                <input type="text" data-n1='n1' name="number1" id="n1" placeholder="Enter the first number" required>
-            </div><br>
-            <div>
-                <label for="n2">Enter the second number</label>
-                <input type="text" name="number2" id="n2" placeholder="Enter the second number" required>
+                <label for="num">Enter the squre one side value</label>
+                <input type="text" data-n='n' name="number" id="num" placeholder="Enter the squre one side value">
             </div><br>
             
             <input type="submit" value="Submit">
@@ -32,11 +28,10 @@
 
             function submitForm(){//formal argument/parameter
                 //function body
-                let num1 = document.querySelector("[data-n1='n1']").value;
-                var num2 = document.getElementById('n2').value;
+                let num = document.querySelector("[data-n='n']").value;
                 //alert(parseInt(num1) + parseInt(num2));
 
-                let res = parseInt(num1) + parseInt(num2);
+                let res = parseInt(num) * parseInt(num);
                 alert(res);
 
                 //now this result store local storage 
