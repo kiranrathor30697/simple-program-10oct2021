@@ -14,23 +14,28 @@
         </script>
     </head>
     <body>
+        <a href="index2.html">AreaOfTriangle </a><br>
+        <h1>Generate Reverse Number</h1>
+        
         
         <script>
+
             //1. function definition
             function GenerateReverseNumber(n){//formal argument/parameter
                 //alert('ok');
                 for(var i=n.length;i>=0;i--){
-                    console.log(n.charAt(i));
+                   res = console.log(n.charAt(i));
                 }
-
             }
             
             let number = prompt('Enter the Number');
             //1.function calling
             GenerateReverseNumber(number);//actual argument/parameter
 
-            //console.log(res);
-                
+            /*alert(
+                "Reversed number: " + res ( +prompt("Enter a value") ) 
+                ); */
+                alert("reverse numbe = " + res);
         </script>
     </body>
 </html>
