@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palindrom Number</title>
+        <style>
+
+        </style>
+
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <a href="index1_reverse.html">GenerateReverseNumber </a><br>
+        <h1>Palindrome Number</h1>
+        
+        
+        <script>
+            //1. function definition
+            function checkForPalindrome(n){//formal argument/parameter
+                //function body
+                //string.length
+                //alert(n.length);
+                //alert(n.charAt(1));
+            var isPalindrome = false;   
+
+                
+            for(j=(n.length-1);j>=0;j--){
+                console.log(n.charAt(j));
+                for(var i=0;i<n.length;i++){
+                    console.log(n.charAt(i));
+                    if(n.charAt(j) == n.charAt(i)){
+                        isPalindrome = true;
+                        }else{
+                            isPalindrome = false;
+                    }
+                }
+            }
+                if(isPalindrome == true){
+                    alert(n+" is a palindrome number");
+                }else{
+                    alert(n+ " is not a palindrome number");
+                }
+            }
+        
+            let number = prompt('Enter the number check it if polindrome and not?');
+               
+            //number=parseInt(number);
+            //alert(number+10);
+
+
+            //1.funcion calling
+            checkForPalindrome(number);//actual argument/parameter
+
+        </script>
+    </body>
+</html>
