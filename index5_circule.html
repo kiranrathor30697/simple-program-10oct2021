@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Area of Squre</title>
+        <title>Find Out Circle</title>
         <style>
 
         </style>
@@ -14,16 +14,9 @@
         </script>
     </head>
     <body>
-        <a href="index4_traingle.html">AreaOfcircle</a><br>
-        <h1>area Of Squre</h1>
-        
-
+        <a href="index6_Switchcase.html">AreaOfCircle </a><br>
         <form onsubmit="submitForm()">
-            <div>
-                <label for="num">Enter the squre one side value</label>
-                <input type="text" data-n='n' name="number" id="num" placeholder="Enter the squre one side value">
-            </div><br>
-            
+            <input type="text" data-n1='n1' name="number1" id="n1" placeholder="Enter the Radius">
             <input type="submit" value="Submit">
         </form>
         
@@ -32,10 +25,10 @@
 
             function submitForm(){//formal argument/parameter
                 //function body
-                let num = document.querySelector("[data-n='n']").value;
-                //alert(parseInt(num1) + parseInt(num2));
+                let num1 = document.querySelector("[data-n1='n1']").value;
+                alert(parseInt(22/7) * parseInt(num1) * parseInt(num1));
 
-                let res = parseInt(num) * parseInt(num);
+                let res = (parseInt(22/7) * parseInt(num1) * parseInt(num1));
                 alert(res);
 
                 //now this result store local storage 
